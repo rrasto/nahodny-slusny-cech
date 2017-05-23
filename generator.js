@@ -88,7 +88,7 @@ var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán 
    'pán prezident Putin', 'Putin', 'Magát', 'prezident Trump', 'pán Mazúrek', 'ĽSNS', 'Sme Rodina', 'Orbán'];
 
 var badGuys = ['Kiska', 'vlastizrádca Kiska', 'slniečkári', 'kolaboranti', 'moslimáci',
- 'Radičová', 'fašisti na ukrajine', 'kiskoidi', 'birokrati z EU', 'Obama', 'nihilisti', 'zapredanci', 'protinárodné živly'
+ 'Radičová', 'fašisti na ukrajine', 'kiskoidi', 'birokrati z EU', 'Obama', 'nihilisti', 'zapredanci', 'protinárodné živly',
  'makrela', 'Merkelova', 'nadnárodné elity', 'braislavská kaviareň', 'novinárskí zapredanci',
  'iluminati', 'USA ambasáda', 'CIA', 'nadnárodné korporácie', 'diktát z EU', 'islam', 'cigáni'];
 
