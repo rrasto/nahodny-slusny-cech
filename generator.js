@@ -19,10 +19,12 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' k lopatám ich nahnať fšecky ',
   ' zapalte ohne zvrchovanosti ',
   ' a bežte s tým multi-kulti do prdele!!',
-  ' na stráaž!!!!',
-  ' na stráy!!!!',
-  ' nastráž!!!!',
-  ' nastráy!!!!',
+  ' na stráaž !!!!',
+  ' na stráˇy!!!!',
+  ' nastráž! !!!',
+  ' nastráˇy !!!!',
+  ' verý sebe , svorne naprd !!!!',
+  'Tento fašistycký štát zlyháva na plnej čjare , aspoň vo vlakoch nás chránia naši slušný chlapci v zelenom !!!',
   ' Nječo je vo vzduchu ,dneska u nas bol velky chemtrails, náhoda? ',
   'Odstraňte tie multikulty pičoviny!',
   ' je to riadená genocida bielej rasy ',
@@ -34,7 +36,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' pretože jedinym řiešením migračnej krízy je gulomet...',
   ' lenže Rusko aspoň aspom nerozpútava tie vojny kvoli rope ',
   ' a na našich duochodcov musíme ZBIERAŤ VRCHNÁKY???? ',
-  ' fšecci pravdoláskari by si maly spomenúť na humanytárne bonbardovanie Havlem!!',
+  ' fšecci pravdoláskari by si maly spomenúť na humanytárne bonbardovanie Havlom!!',
   ' z mojich daní sa nebudu platiť týchto "neprispuosobivých" ',
   ' nebuďte ovce....',
   ' to niesú žiadny utečenci ,majú totiž mobilné telefony a značkové handri ',
@@ -47,8 +49,8 @@ var goodGuysSentences = [
   [1, ' {0} aspom vravý tomuto národu praudu .'],
   [1, ' a {0} a {1} by mali vyhráť volbi '],
   [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
-  [2, 'Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislý dobre .'],
-  [1, ' {0} tam aspoň zoptimalizuje tých vlastizradcov tochto ťažko skúšaného národa !!!  ']
+  [2, 'Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
+  [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!  ']
 ];
 
 var badGuysSentences = [
