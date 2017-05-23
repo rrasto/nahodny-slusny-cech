@@ -16,7 +16,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' už to písal aj Tibor , Eliot a Rostas v Zem a Vek ',
   ' lidi prebuďte se už konečne , kam až to necháme zajsť?!',
   ' chce to už konečne krvavú revolúciu a nastoliť vládu pracujíceho ľudu!!!!!',
-  ' k lopatám je nahnať fšecky ',
+  ' k lopatám ich nahnať fšecky ',
   ' zapalte ohne zvrchovanosti ',
   ' a bežte s tým multi-kulti do prdele!!',
   ' na stráaž!!!!',
@@ -26,7 +26,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' Nječo je vo vzduchu ,dneska u nas bol velky chemtrails, náhoda? ',
   'Odstraňte tie multikulty pičoviny!',
   ' je to riadená genocida bielej rasy ',
-  ' nech si ich vezmú k sebe domou 11!!! ',
+  ' nech si ich vezmú k sebe domou !1!!! ',
   ' neisom rasista,europa je biela afrika je čierna a ázja je žltá ',
   ' preca niesom xenofob ,keď si to myslím ',
   ' njesom rasista , ale ',
@@ -34,8 +34,8 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' pretože jedinym řiešením migračnej krízy je gulomet...',
   ' lenže Rusko aspoň aspom nerozpútava tie vojny kvoli rope ',
   ' a na našich duochodcov musíme ZBIERAŤ VRCHNÁKY???? ',
-  ' všichni pravdoláskari by si maly spomenúť na humanytárne bonbardovanie Havlem!!',
-  ' z mojich daní sa nebudu platiť týto "neprispuosobivý" ',
+  ' fšecci pravdoláskari by si maly spomenúť na humanytárne bonbardovanie Havlem!!',
+  ' z mojich daní sa nebudu platiť týchto "neprispuosobivých" ',
   ' nebuďte ovce....',
   ' to niesú žiadny utečenci ,majú totiž mobilné telefony a značkové handri ',
   'Hehehe,natrtkali si ,nech sa starajú.'];
@@ -43,21 +43,21 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
 var goodGuysSentences = [
   [1, ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .'],
   [1, ' {0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .'],
-  [1, ' {0} to mislí uprimně .'],
-  [1, ' {0} aspom vravý praudu .'],
+  [1, ' {0} to mislí uprimne z našim národom .'],
+  [1, ' {0} aspom vravý tomuto národu praudu .'],
   [1, ' a {0} a {1} by mali vyhráť volbi '],
   [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
   [2, 'Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislý dobre .'],
-  [1, ' {0} tam aspoň zoptimalizuje tých vlastizradcov  !!!  ']
+  [1, ' {0} tam aspoň zoptimalizuje tých vlastizradcov tochto ťažko skúšaného národa !!!  ']
 ];
 
 var badGuysSentences = [
   [2, ' za fšecko muožu {0} a {1} .'],
   [2, 'Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
-  [2, '{0} a {1} len okrádajú štát a slušných pracovytých luďí.'],
-  [1, '{0} do plinu!!!!'],
-  [1, ' , lebo toto sú veci bez ktorých by táto republika fungovala: {0} a {1} '],
-  [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do afriky!!!!'],
+  [2, '{0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .'],
+  [1, '{0} do plinu !!!!'],
+  [1, ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} '],
+  [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!'],
   [1, 'Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
   [2, '{0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
   [1, 'Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
