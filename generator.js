@@ -1,11 +1,11 @@
 (function () {
 
 // some random hates found on the internets
-var other = ['Přece  nám nebudou říkat jestli máme mít právo šaria , pivo a klobásku bych jim povině dal všem snízt. ',
-  ' to by se za komunistů stát nemohlo, zlatý komunisti!!!!',
-  ' republiku si  rozvracet nenecháme ',
-  ' a média a česká televize mlčí',
-  ' ja nejsem rasista..',
+var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne dať. ',
+  ' to by sa za komunistov nestalo!!!!',
+  ' republiku si  rozvracať nedáme ',
+  ' a médja mlčja',
+  ' ja niesom rasista..',
   ' Můžete laskavě vysvětlit proč pánskou módu prezentujete na "černochovi"??',
   ' Chci se zeptat jestli tento černý model je opravdu nutný ve vašem letáku. je?',
   ' a vyrešilo byse to kdy by byl Ortel na hradu ',
@@ -62,39 +62,35 @@ var other = ['Přece  nám nebudou říkat jestli máme mít právo šaria , piv
   'Hehehe,natrtkalisi ,ať se starají.'];
 
 var goodGuysSentences = [
-  [1, ' politice sice moc nerozumím ale ten {0} je dobrý, ten by tam aspoň udělal pořádek .'],
-  [1, ' {0} chce aby jsme mohly bránit naší zemy.'],
-  [1, ' {0} to mislí upřímně.'],
-  [1, ' {0} říká aspoň tu pravdu.'],
-  [1, ' a {0} a {1} by mněli vyhrát volbi '],
-  [1, ' mislím,že {0} je jedinný rozumný , protože aspoň má koule a říka co si myslí. '],
-  [2, 'Každý kdo má mozek a není pyča přece musí vědět že {0} a {1} to s náma mislí dobře .'],
-  [1, ' {0} je tam aspoň srovná ty vlastizrádce  !!!  ']
+  [1, ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .'],
+  [1, ' {0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .'],
+  [1, ' {0} to mislí uprimně .'],
+  [1, ' {0} aspom vravý praudu .'],
+  [1, ' a {0} a {1} by mali vyhráť volbi '],
+  [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
+  [2, 'Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislý dobre .'],
+  [1, ' {0} tam aspoň zoptimalizuje tých vlastizradcov  !!!  ']
 ];
 
 var badGuysSentences = [
-  [2, ' za všechno můžou {0} a {1} .'],
-  [2, 'Exystuje tajný plán , který vytvořili {0} a {1} a teď se to všechno děje otevřete už konečně oči '],
-  [2, '{0} a {1} stejně pořád jenom okrádají stát a slušné pracující lidi.'],
-  [1, '{0} do plynu!!!!'],
-  [1, ' ,proto ze tohle jsou veci bez kterych by tato republika fungovala: {0} a {1} '],
-  [1, ' je to jednoduché.. {0}? Měl bych řešení - vyhostit do afriky!!!!'],
-  [1, 'Je to přece uplně jasné že korporace a {1} chcou aby jste si to tak misleli .'],
-  [3, 'Naše celá vláda i celá EU jsou jenom loutky , otevřete už ty oči ,vždyť i {0} ,{1} nebo {2}, všichni nám jen lžou '],
-  [2, ' Vždyť když jsou tak mladí a mají na mobilní  telefon tak přece můžou i jít bojovat za svoji zemi to jenom {0} a {1} říkaji ,že jich je tady jenom málo,ale to se zmnění.'],
-  [2, '{0} a {1} nemusí pracovat a můžou dostávat dávky a my na naše děti musíme jenom zbírat výčka, aby byly zdravé,pro tohle jsem klíčema necinkal  zlatí komunisti!!! ! '],
-  [4, '{0}, {1} ,{2} ale i {3} by mněly jít všichni raději někam do afriky, nebo rovnou do koncentraku a byl by už konečně klid .'],
-  [3, 'Přece nechceme aby slusní lidi musely platit  jenom daně a hubu jak ovce a {0}, {1}, {2} aspol. pořád jenom kradli tohle už ne!!!  '],
-  [1, 'Jinak včera jsem se díval na oblohu a bila tam velká dávka chemtrails větši nez obvikle můžou za to {1} a Kalousek!!!!!!']
+  [2, ' za fšecko muožu {0} a {1} .'],
+  [2, 'Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
+  [2, '{0} a {1} len okrádajú štát a slušných pracovytých luďí.'],
+  [1, '{0} do plinu!!!!'],
+  [1, ' , lebo toto sú veci bez ktorých by táto republika fungovala: {0} a {1} '],
+  [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do afriky!!!!'],
+  [1, 'Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
+  [2, '{0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
+  [1, 'Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
 ];
 
-var goodGuys = ['pan Babiš', 'Babiš', 'pan mluvčí Ovčáček', 'Zeman', 'pan prezident', 'Okamura', 'pan Konvička',
-   'pan president Putin', 'Putin', 'Ortel', 'prezident Trump', 'Adam B. Bartoš', 'SPD', 'KSČM'];
+var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán premiér', 'Slovenské Hnutie Obrody', 'pán Švec',
+   'pán prezident Putin', 'Putin', 'Magát', 'prezident Trump', 'pán Mazúrek', 'ĽSNS', 'Sme Rodina', 'Orbán'];
 
-var badGuys = ['Sobotka', 'vlastizrádce Sobotka', 'sluničkári', 'prohavlovská pakaž', 'kolaboranti', 'muslimáci',
- 'Kalousek', 'fašisti na ukrajine', 'havloidi', 'birokrati z EU', 'Diensbier', 'Horáček', 'Obama',
- 'makrela', 'zmrd Kalousek', 'Merkelova', 'nadnárodni elity', 'pražská kavárna', 'novinářská žumpa',
- 'iluminati', 'USA ambasáda', 'CIA', 'korporace', 'diktát z EU', 'islám', 'cigani', 'Moravec', 'Kocáb'];
+var badGuys = ['Kiska', 'vlastizrádca Kiska', 'slniečkári', 'kolaboranti', 'moslimáci',
+ 'Radičová', 'fašisti na ukrajine', 'kiskoidi', 'birokrati z EU', 'Obama', 'nihilisti', 'zapredanci', 'protinárodné živly'
+ 'makrela', 'Merkelova', 'nadnárodné elity', 'braislavská kaviareň', 'novinárskí zapredanci',
+ 'iluminati', 'USA ambasáda', 'CIA', 'nadnárodné korporácie', 'diktát z EU', 'islam', 'cigáni'];
 
 // monkey patch the formatting function into strings
  String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
@@ -126,8 +122,8 @@ function buranize(sentence, howMuchCapslock, howMuchTypos) {
       return chunk;
     }
   }).join('');
-  var swearWords = ['KUNDYYY', 'HOVADAAA', 'ŽIDI', 'KOKOTI', 'SVINĚ', 'KOLABORANTI', 'IDIOTI'];
-  var swearWordsLvl2 = ['KURVAAAA', 'PIIIČOO', 'ZMRRRDE', 'JEBAT EU', 'MRDKYYY', 'STŘÍLET MIGRANTY', 'CIGÁNY DO PLYNU'];
+  var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'SVINE', 'KOLABORANTI', 'YDIOTI'];
+  var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ EU', 'KOKOOOOT', 'STRIELAŤ MIGRANTY', 'CIGÁNI DO PLYNU'];
   if (howMuchCapslock > 0.4) {
     result += '!!!';
   }
