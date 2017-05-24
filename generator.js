@@ -14,7 +14,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' sprisahali sa proti našim hokejistom abi nič nehraly,my jsi dyktovat z EU NEDÁME !!',
   '. Pan   Kotleba  je dobrý človek,médjá klamu  ',
   ' už to písal aj Tibor , Eliot a Rostas v Zem a Vek ',
-  ' lidi prebuďte se už konečne , kam až to necháme zajsť?!',
+  ' ludja prebuďte se už konečne , kam až to necháme zajsť?!',
   ' chce to už konečne krvavú revolúciu a nastoliť vládu pracujíceho ľudu!!!!!',
   ' k lopatám ich nahnať fšecky ',
   ' zapalte ohne zvrchovanosti ',
