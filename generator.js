@@ -7,9 +7,9 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' a médja mlčja',
   ' ja niesom rasista..',
   ' známá  z Nemecka spomínala, že vuobec nepracuju a len berú dávky ',
-  'Čina a Rusko sú aspoň pre tento národ prínos, to sa o tých Sorošových zapredancoch povedať nedá !!!',
-  '1000íce migrantov nám chce brať naše hodnoty,musíme chrániť naše hranice!!!  ',
-  'Otvorte už konecne oči, vy tupé ovce!!!11!',
+  ' Čina a Rusko sú aspoň pre tento národ prínos, to sa o tých Sorošových zapredancoch povedať nedá !!!',
+  ' 1000íce migrantov nám chce brať naše hodnoty,musíme chrániť naše hranice!!!  ',
+  ' Otvorte už konecne oči, vy tupé ouce!!!11!',
   ' nje je to síce prauda ale MOHLA BY BÝŤ!!!',
   ' sprisahali sa proti našim hokejistom abi nič nehraly,my jsi dyktovat z EU NEDÁME !!',
   '. Pan   Kotleba  je dobrý človek,médjá klamu  ',
@@ -25,9 +25,9 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' nastráˇy !!!!',
   ' nastráš !!!!',
   ' verý sebe , svorne naprd !!!!',
-  'Tento fašistycký štát zlyháva na plnej čjare , aspoň vo vlakoch nás chránia naši slušný chlapci v zelenom !!!',
+  ' Tento fašistycký štát zlyháva na plnej čjare , aspoň vo vlakoch nás chránia naši slušný chlapci v zelenom !!!',
   ' Nječo je vo vzduchu ,dneska u nas bol velky chemtrails, náhoda? ',
-  'Odstraňte tie multikulty pičoviny!',
+  ' Odstraňte tie multikulty pičoviny!',
   ' je to riadená genocida bielej rasy ',
   ' nech si ich vezmú k sebe domou !1!!! ',
   ' neisom rasista,europa je biela afrika je čierna a ázja je žltá ',
@@ -39,7 +39,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' a na našich duochodcov musíme ZBIERAŤ VRCHNÁKY???? ',
   ' fšecci pravdoláskari by si maly spomenúť na humanytárne bonbardovanie Havlom!!',
   ' z mojich daní sa nebudu platiť týchto "neprispuosobivých" ',
-  ' nebuďte ovce....',
+  ' nebuďte ouce....',
   ' to niesú žiadny utečenci ,majú totiž mobilné telefony a značkové handri ',
   'Hehehe,natrtkali si ,nech sa starajú.'];
 
@@ -50,7 +50,7 @@ var goodGuysSentences = [
   [1, ' {0} aspom vravý tomuto národu praudu .'],
   [1, ' a {0} a {1} by mali vyhráť volbi '],
   [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
-  [2, 'Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
+  [2, ' Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
   [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!  ']
 ];
 
