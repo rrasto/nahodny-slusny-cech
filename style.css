@@ -105,7 +105,7 @@ a:hover {
   /*height: 100%;*/
 }
 
-.container img {
+/*.container img {
     position: absolute;
     left: 0;
     top: 0;
@@ -113,7 +113,7 @@ a:hover {
     height: auto;
     opacity: 0.6;
     z-index: -1;
-}
+}*/
 
 
 input[type=range] {
