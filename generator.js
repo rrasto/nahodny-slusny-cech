@@ -202,15 +202,16 @@ function generatePost() {
 
 // hacky export, but let's keep it simple
 window.generatePost = generatePost;
+window.changeBackground = changeBackground;
 
 return {
   getPost: getPost
 };
 })();
 
-function changeBackground() {
-  var rage = parseInt(document.getElementById('rageFactor').value);
-  var colors = ["(53,130,0)","(94,130,0)","(129,123,0)","(129,82,0)","(129,55,0)",
-                "(128,27,0)","(138,0,0)","(160,0,0)","(192,0,0)","(223,0,0)","(255,0,0)"];
-  document.body.style.background = "rgb" + colors[rage];
-}
+// function changeBackground() {
+//   var rage = parseInt(document.getElementById('rageFactor').value);
+//   var colors = ["(53,130,0)","(94,130,0)","(129,123,0)","(129,82,0)","(129,55,0)",
+//                 "(128,27,0)","(138,0,0)","(160,0,0)","(192,0,0)","(223,0,0)","(255,0,0)"];
+//   document.body.style.background = "rgb" + colors[rage];
+// }
