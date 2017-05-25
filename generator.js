@@ -189,9 +189,14 @@ function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
                 "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
-  var images = ["http://img.topky.sk/big/1736737.jpg"];
+  var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
+                "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
+                "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
+                "http://img.topky.sk/big/1736737.jpg",
+                "http://i.sme.sk/cdata/2/49/4906652/kotleba.jpg",
+                "https://i.ytimg.com/vi/gJe7fY-yowk/maxresdefault.jpg"];
   document.body.style.background = "rgb" + colors[rage];
-  //document.getElementByClassName('container').style.background = "rgb" + colors[rage];
+  document.getElementById('xichty').src = images[parseInt(rage/2)];
 }
 
 function generatePost() {
