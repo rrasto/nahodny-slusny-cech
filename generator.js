@@ -24,7 +24,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' nastráž! !!!',
   ' nastráˇy !!!!',
   ' nastráš !!!!',
-  ' verý sebe , svorne naprd !!!!',
+  ' verný sebe , svorne naprd !!!!',
   ' Tento fašistycký štát zlyháva na plnej čjare , aspoň vo vlakoch nás chránia naši slušný chlapci v zelenom !!!',
   ' Nječo je vo vzduchu ,dneska u nas bol velky chemtrails, náhoda? ',
   ' Odstraňte tie multikulty pičoviny!',
