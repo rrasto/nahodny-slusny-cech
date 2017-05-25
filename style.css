@@ -101,11 +101,11 @@ a:hover {
   margin: 0 auto;
   padding: 0 0.5em 0.5em 0.5em;
   /*position: relative;*/
-  /*overflow: hidden;*/
-  /*height: 100%;*/
+  overflow: hidden;
+  height: 100%;
 }
 
-/*.container img {
+#xichty {
     position: absolute;
     left: 0;
     top: 0;
@@ -113,7 +113,7 @@ a:hover {
     height: auto;
     opacity: 0.6;
     z-index: -1;
-}*/
+}
 
 
 input[type=range] {
