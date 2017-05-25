@@ -101,8 +101,8 @@ a:hover {
   margin: 0 auto;
   padding: 0 0.5em 0.5em 0.5em;
   position: relative;
-  overflow: hidden;
-  height: 100%;
+  /*overflow: hidden;*/
+  /*height: 100%;*/
 }
 
 .container img {
