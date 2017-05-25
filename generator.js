@@ -187,8 +187,8 @@ function getPost(length, capslock) {
   
 function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
-  var colors = ["(53,130,0)","(94,130,0)","(129,123,0)","(129,82,0)","(129,55,0)",
-                "(128,27,0)","(138,0,0)","(160,0,0)","(192,0,0)","(223,0,0)","(255,0,0)"];
+  var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
+                "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
   document.body.style.background = "rgb" + colors[rage];
 }
 
