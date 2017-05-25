@@ -25,10 +25,8 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' k lopatám ich nahnať fšecky ',
   ' zapalte ohne zvrchovanosti ',
   ' a bežte s tým multi-kulti do prdele!!',
-  ' na stráaž !!!!',
   ' na stráˇy!!!!',
   ' nastráž! !!!',
-  ' nastráˇy !!!!',
   ' nastráš !!!!',
   ' verný sebe , svorne naprd !!!!',
   ' Tento fašistycký štát zlyháva na plnej čjare , aspoň vo vlakoch nás chránia naši slušný chlapci v zelenom !!!',
@@ -110,8 +108,9 @@ function buranize(sentence, howMuchCapslock, howMuchTypos) {
       return chunk;
     }
   }).join('');
-  var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'SVINE', 'KOLABORANTI', 'YDIOTI'];
-  var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ EU', 'KOKOOOOT', 'STRIELAŤ MIGRANTY', 'CIGÁNI DO PLYNU'];
+  var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
+  var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ EU', 'KOKOOOOT', 'STRIELAŤ MIGRANTOV', 
+                          'CIGÁNI DO PLYNU', 'NASTRÁˇY'];
   if (howMuchCapslock > 0.4) {
     result += '!!!';
   }
