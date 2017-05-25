@@ -3,6 +3,7 @@
 // some random hates found on the internets
 var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne dať. ',
   ' to by sa za komunistov nestalo!!!!',
+  ' Kiska lokaj sionu , hamba slovákov',
   ' je to prauda, aj na Slobodnom Vysjelaci to pisali !1!!',
   ' Jediny pravi prezident Slovákov navždy zostáva dotchor Jozef Tiso. ',
   ' nje dr. Tiso , ale vlastizracca Kiska bi mal visjet!!',
