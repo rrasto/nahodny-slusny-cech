@@ -3,9 +3,15 @@
 // some random hates found on the internets
 var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne dať. ',
   ' to by sa za komunistov nestalo!!!!',
+  ' je to prauda, aj na Slobodnom Vysjelaci to pisali !1!!',
+  ' Jediny pravi prezident Slovákov navždy zostáva dotchor Jozef Tiso. ',
+  ' nje dr. Tiso , ale vlastizracca Kiska bi mal visjet!!',
+  ' som Slovan a Putin je muoj prezident ',
+  ' za Slovenského štátu bolo najlepšie , starý otec my to na vlasné oči rozprávali',
+  ' holokaust sú len sionistické rosprávky čo nám tlačja imperjalisti na čele s USA !',
   ' republyku si rozvracať nedáme ',
   ' a médja mlčja',
-  ' ja niesom rasista..',
+  ' ja niesom rasista...',
   ' známá  z Nemecka spomínala, že vuobec nepracuju a len berú dávky ',
   ' Čina a Rusko sú aspoň pre tento národ prínos, to sa o tých Sorošových zapredancoch povedať nedá !!!',
   ' 1000íce migrantov nám chce brať naše hodnoty,musíme chrániť naše hranice!!!  ',
@@ -51,14 +57,14 @@ var goodGuysSentences = [
   [1, ' a {0} a {1} by mali vyhráť volbi '],
   [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
   [2, ' Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
-  [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!  ']
+  [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!']
 ];
 
 var badGuysSentences = [
   [2, ' za fšecko muožu {0} a {1} .'],
-  [2, 'Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
-  [2, '{0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .'],
-  [1, '{0} do plinu !!!!'],
+  [2, ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
+  [2, ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .'],
+  [1, ' {0} do plinu !!!!'],
   [1, ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} '],
   [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!'],
   [1, 'Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
