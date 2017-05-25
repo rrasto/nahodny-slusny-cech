@@ -102,9 +102,10 @@ a:hover {
   padding: 0 0.5em 0.5em 0.5em;
   position: relative;
   overflow: hidden;
+  height: 100%;
 }
 
-#xichty {
+.container img {
     position: absolute;
     left: 0;
     top: 0;
