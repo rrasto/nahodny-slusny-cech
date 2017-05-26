@@ -19,7 +19,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' Otvorte už konecne oči, vy tupé ouce!!!11!',
   ' nje je to síce prauda ale MOHLA BY BÝŤ!!!',
   ' sprisahali sa proti našim hokejistom abi nič nehraly,my jsi dyktovat z EU NEDÁME !!',
-  '. Pan   Kotleba  je dobrý človek,médjá klamu  ',
+  ' Pan   Kotleba  je dobrý človek,médjá klamu  ',
   ' už to písal aj Tibor , Eliot a Rostas v Zem a Vek ',
   ' ludja prebuďte se už konečne , kam až to necháme zajsť?!',
   ' chce to už konečne krvavú revolúciu a nastoliť vládu pracujíceho ľudu!!!!!',
@@ -46,7 +46,7 @@ var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne d
   ' z mojich daní sa nebudu platiť týchto "neprispuosobivých" ',
   ' nebuďte ouce....',
   ' to niesú žiadny utečenci ,majú totiž mobilné telefony a značkové handri ',
-  'Hehehe,natrtkali si ,nech sa starajú.'];
+  ' Hehehe,natrtkali si ,nech sa starajú.'];
 
 var goodGuysSentences = [
   [1, ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .'],
@@ -66,9 +66,9 @@ var badGuysSentences = [
   [1, ' {0} do plinu !!!!'],
   [1, ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} '],
   [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!'],
-  [1, 'Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
-  [2, '{0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
-  [1, 'Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
+  [1, ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
+  [2, ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
+  [1, ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
 ];
 
 var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán premiér', 'Slovenské Hnutie Obrody', 'pán Švec', 'náš biedny národ',
