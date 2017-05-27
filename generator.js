@@ -181,20 +181,12 @@ function changeTopic() {
       }
   }
   var role = getRole();
-//   var role = 1;
-//   var radiosR = document.getElementsByName('role');
-//   for (i = 0; i < radiosR.length; i++) {
-//       if (radiosR[i].checked) {
-//           role = parseInt(radiosR[i].value);
-//           break;
-//       }
-//   }
   if (role == 2) {
     var keyword = "slniecko";
-    goodGuysSentences = [[]];
-    badGuysSentences = [[]];
-    goodGuys = [];
-    badGuys = [];
+    goodGuysSentences = [[0, ""]];
+    badGuysSentences = [[0, ""]];
+    goodGuys = [""];
+    badGuys = [""];
     swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA'];
     swearWordsLvl2 = ['FAŠISTI', 'NENAZRANE SVINE', 'VRAHOVIA', 'IGNORANTIII', 'VYPATLANCI'];
   }
