@@ -211,6 +211,9 @@ function getPost(length, capslock) {
   for (i = 0; i < badGuysSentencesBak.length; i++) {
     for (j = 0; j < 10; j++) {
       console.log('{' + j.toString() + '}');
+      if(badGuysSentencesBak.indexOf('{1}') >= 0) {
+        console.log("madafaka {1} " + '{' + j.toString() + '}');
+      }
       if(badGuysSentencesBak.indexOf('{' + j.toString() + '}') >= 0) {
         console.log(j);
         badGuysSentencesBak[i] = [j+1, badGuysSentencesBak[i]]
