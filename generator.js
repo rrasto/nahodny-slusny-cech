@@ -2,12 +2,20 @@
 
 // some random hates found on the internets
 var other = [];
+var goodGuysSentences = [];
+var badGuysSentences = [];
+var goodGuys = [];
+var badGuys = [];
   
 function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
   other = parseTextFile("hlasky.txt");
-  console.log(other);
+  goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
+  badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
+  goodGuys = parseTextFile("dobri_chlapci.txt");
+  badGuys = parseTextFile("zli_chlapci.txt");
+  console.log(goodGuys);
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
 }
@@ -58,16 +66,16 @@ function generatePost() {
 //   ' to niesú žiadny utečenci ,majú totiž mobilné telefony a značkové handri ',
 //   ' Hehehe,natrtkali si ,nech sa starajú.'];
 
-var goodGuysSentences = [
-  [1, ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .'],
-  [1, ' {0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .'],
-  [1, ' {0} to mislí uprimne z našim národom .'],
-  [1, ' {0} aspom vravý tomuto národu praudu .'],
-  [1, ' a {0} a {1} by mali vyhráť volbi '],
-  [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
-  [2, ' Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
-  [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!']
-];
+// var goodGuysSentences = [
+//   [1, ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .'],
+//   [1, ' {0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .'],
+//   [1, ' {0} to mislí uprimne z našim národom .'],
+//   [1, ' {0} aspom vravý tomuto národu praudu .'],
+//   [1, ' a {0} a {1} by mali vyhráť volbi '],
+//   [1, ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. '],
+//   [2, ' Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .'],
+//   [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!']
+// ];
 
 // var goodGuysSentences = [
 //   ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .',
@@ -80,37 +88,37 @@ var goodGuysSentences = [
 //    ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!'
 // ];
   
-var badGuysSentences = [
-  [2, ' za fšecko muožu {0} a {1} .'],
-  [2, ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
-  [2, ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .'],
-  [1, ' {0} do plinu !!!!'],
-  [1, ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} '],
-  [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!'],
-  [1, ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
-  [2, ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
-  [1, ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
-];
+// var badGuysSentences = [
+//   [2, ' za fšecko muožu {0} a {1} .'],
+//   [2, ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
+//   [2, ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .'],
+//   [1, ' {0} do plinu !!!!'],
+//   [1, ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} '],
+//   [1, ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!'],
+//   [1, ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
+//   [2, ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
+//   [1, ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
+// ];
   
-var badGuysSentences = [
-  ' za fšecko muožu {0} a {1} .',
-  ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči ',
-  ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .',
-  ' {0} do plinu !!!!',
-  ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} ',
-  ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!',
-  ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .',
-  ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! ',
-  ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!'
-];
+// var badGuysSentences = [
+//   ' za fšecko muožu {0} a {1} .',
+//   ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči ',
+//   ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .',
+//   ' {0} do plinu !!!!',
+//   ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} ',
+//   ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!',
+//   ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .',
+//   ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! ',
+//   ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!'
+// ];
 
-var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán premiér', 'Slovenské Hnutie Obrody', 'pán Švec', 'náš biedny národ',
-   'pán prezident Putin', 'Putin', 'Magát', 'prezident Trump', 'pán Mazúrek', 'ĽSNS', 'Sme Rodina', 'Orbán', 'tento národ', 'náš náarod'];
+// var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán premiér', 'Slovenské Hnutie Obrody', 'pán Švec', 'náš biedny národ',
+//    'pán prezident Putin', 'Putin', 'Magát', 'prezident Trump', 'pán Mazúrek', 'ĽSNS', 'Sme Rodina', 'Orbán', 'tento národ', 'náš náarod'];
 
-var badGuys = ['Kiska', 'vlastizraca Kiska', 'slniečkáry', 'kolaboranti', 'moslimáci', 'Soroš', 'admini Deylymejl',
- 'Radičová', 'fašisti na Ukrajine', 'kiskoidi', 'birokrati z EU', 'Obama', 'nihilisti', 'zapredanci', 'protinárodné živly',
- 'makrela', 'Merkelova', 'nadnárodné elity', 'braislavská kaviareň', 'novinárskí zapredanci', 'praudoláskary', 'ukrofašisti',
- 'iluminati', 'USA ambasáda', 'CIA', 'nadnárodné korporácie', 'diktát z EU', 'islam', 'cigáni'];
+// var badGuys = ['Kiska', 'vlastizraca Kiska', 'slniečkáry', 'kolaboranti', 'moslimáci', 'Soroš', 'admini Deylymejl',
+//  'Radičová', 'fašisti na Ukrajine', 'kiskoidi', 'birokrati z EU', 'Obama', 'nihilisti', 'zapredanci', 'protinárodné živly',
+//  'makrela', 'Merkelova', 'nadnárodné elity', 'braislavská kaviareň', 'novinárskí zapredanci', 'praudoláskary', 'ukrofašisti',
+//  'iluminati', 'USA ambasáda', 'CIA', 'nadnárodné korporácie', 'diktát z EU', 'islam', 'cigáni'];
 
 // monkey patch the formatting function into strings
  String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
@@ -186,8 +194,8 @@ function getRandomSentence() {
     var item = goodGuysSentences.splice(Math.floor(Math.random() * goodGuysSentences.length), 1);
     // var numberOfPeople = item[0][0];
     var sentenceTemplate = item[0][1];
-    return item[0][1];
-//     return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
+//     return item[0][1];
+    return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
@@ -196,8 +204,8 @@ function getRandomSentence() {
 //     console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
 //     console.log(sentenceTemplate);
-    return item[0][1];
-//     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
+//     return item[0][1];
+    return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
     //other
     return other.splice(Math.floor(Math.random() * other.length), 1);
