@@ -139,8 +139,8 @@ function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var role = getRole();
   if (role == 2) {
-    var colors = ["(255,244,88)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
-                  "(159,69,0)","(174,58,0)","(189,43,0)","(255,89,236)"];
+    var colors = ["(250,242,113","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(251,191,126)","(144,77,0)",
+                  "(159,69,0)","(174,58,0)","(189,43,0)","(247,154,228)"];
     var images = ["", 
                   "", 
                   "", 
@@ -150,7 +150,7 @@ function changeBackground() {
   }
   else {
     var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
-                  "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
+                  "(159,69,0)","(174,58,0)","(189,43,0)","(247,154,228)"];
     var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
                   "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
                   "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
@@ -231,7 +231,7 @@ window.changeBackground = changeBackground;
 window.changeTopic = changeTopic;
 window.changeRole = changeRole;
   
-changeTopic();
+changeRole();
 
 return {
   getPost: getPost
