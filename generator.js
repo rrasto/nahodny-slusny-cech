@@ -170,7 +170,7 @@ function changeTopic() {
   if (topic == 2) {
     others = parseTextFile("hlasky_romovia.txt")
   } 
-  elif (topic == 3) {
+  else if (topic == 3) {
     others = parseTextFile("hlasky_migranti.txt")
   } 
   else {
