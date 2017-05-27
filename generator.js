@@ -217,11 +217,12 @@ return {
 })();
 
 function parseTextFile(pathOfFileToReadFrom) {
-  console.log("sme tu");
   var request = new XMLHttpRequest();
   request.open("GET", pathOfFileToReadFrom, false);
   request.send(null);
   var returnValue = request.responseText.split("\n");
-
+  for (var i = 0; i < returnValue.length; i++) {
+    returnValue[i] = returnValue[i] + " ";
+  }
   return returnValue;
 }
