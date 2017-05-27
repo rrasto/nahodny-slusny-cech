@@ -165,9 +165,15 @@ function changeTopic() {
   } 
   else if (topic == 3) {
     other = parseTextFile("configs/migranti_hlasky.txt");
-  } 
+  }
+  else if (topic == 4) {
+    other = parseTextFile("configs/lgbt_hlasky.txt");
+  }
   else {
-    other = parseTextFile("configs/hlasky.txt").concat(parseTextFile("configs/romovia_hlasky.txt")).concat(parseTextFile("configs/migranti_hlasky.txt"));
+    other = parseTextFile("configs/hlasky.txt")
+      .concat(parseTextFile("configs/romovia_hlasky.txt"))
+      .concat(parseTextFile("configs/migranti_hlasky.txt"))
+      .concat(parseTextFile("configs/lgbt_hlasky.txt"))
   }
 }
 
