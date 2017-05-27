@@ -1,8 +1,8 @@
-polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .
-{0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .
-{0} to mislí uprimne z našim národom .
-{0} aspom vravý tomuto národu praudu .
+polytike sice moc nerozumjem , ale {0} je dobrý, ten by xcel narobiť porjadki .
+{0} chce aby sme mohly brániť našu svojstojú rodnú svojeť!
+{0} to mislí uprimne z našim národom ...
+{0} aspom vravý tomuto národu praudu ,
 a {0} a {1} by mali vyhráť volbi ,
-mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí.
+mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí .
 Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .
-{0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!
+{0} aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!
