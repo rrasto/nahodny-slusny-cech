@@ -202,7 +202,7 @@ function changeBackground() {
 function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
-  //changeBackground(rage);
+  console.log(parseTextFile("hlasky.txt"));
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
 }
@@ -216,9 +216,12 @@ return {
 };
 })();
 
-// function changeBackground() {
-//   var rage = parseInt(document.getElementById('rageFactor').value);
-//   var colors = ["(53,130,0)","(94,130,0)","(129,123,0)","(129,82,0)","(129,55,0)",
-//                 "(128,27,0)","(138,0,0)","(160,0,0)","(192,0,0)","(223,0,0)","(255,0,0)"];
-//   document.body.style.background = "rgb" + colors[rage];
-// }
+function parseTextFile(pathOfFileToReadFrom) {
+  console.log("sme tu");
+  var request = new XMLHttpRequest();
+  request.open("GET", pathOfFileToReadFrom, false);
+  request.send(null);
+  var returnValue = request.responseText.split("\n");
+
+  return returnValue;
+}
