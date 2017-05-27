@@ -1,15 +1,5 @@
 (function () {
 
-// some random hates found on the internets
-// var other = parseTextFile("configs/hlasky_slovien.txt").concat(parseTextFile("configs/romovia_slovien.txt")).concat(parseTextFile("configs/migranti_slovien.txt"));
-// var goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
-// var badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
-// var goodGuys = parseTextFile("configs/dobri_chlapci.txt");
-// var badGuys = parseTextFile("configs/zli_chlapci.txt");
-// var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
-// var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
-//                           'HAJZLY DO PLYNU', 'NASTRÁˇY'];
-  
 var other;
 var goodGuysSentences;
 var badGuysSentences;
@@ -55,18 +45,17 @@ function buranize(sentence, howMuchCapslock, howMuchTypos) {
       return chunk;
     }
   }).join('');
-//   var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
-//   var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ EU', 'KOKOOOOT', 'STRIELAŤ MIGRANTOV', 
-//                           'CIGÁNI DO PLYNU', 'NASTRÁˇY'];
   if (howMuchCapslock > 0.4) {
     result += '!!!';
   }
   if (howMuchCapslock > 0.6) {
     var wordLvl1 = swearWords.splice(Math.floor(Math.random() * swearWords.length), 1);
+    swearWords.push(wordLvl1);
     result += '!! ' + wordLvl1 + '!!!!';
   }
   if (howMuchCapslock > 0.8) {
     var wordLvl2 = swearWordsLvl2.splice(Math.floor(Math.random() * swearWordsLvl2.length), 1);
+    swearWords.push(wordLvl2);
     result +=  '!!! ' + wordLvl2 + '!!!!!!!!!!!!!!!?!!!!!!';
   }
   return result;
