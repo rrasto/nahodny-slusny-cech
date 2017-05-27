@@ -7,7 +7,7 @@ function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
   other = parseTextFile("hlasky.txt");
-  console.log(other);
+//   console.log(other);
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
 }
@@ -167,8 +167,11 @@ function getRandomSentence() {
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
-    // var numberOfPeople = item[0][0];
+    console.log("item":);
+    console.log(item);
+    console.log("sentenceTemplate":);
     var sentenceTemplate = item[0][1];
+    console.log(sentenceTemplate);
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
     //other
@@ -182,6 +185,8 @@ function getPost(length, capslock) {
   capslock = capslock || 0.05;
   var goodGuysSentencesBak = goodGuysSentences.slice(0);
   var badGuysSentencesBak = badGuysSentences.slice(0);
+  console.log("badGuysSentencesBak":);
+  console.log(badGuysSentencesBak);
   var otherBak = other.slice(0);
 
   var post = '';
