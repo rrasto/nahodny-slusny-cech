@@ -97,6 +97,7 @@ function getRandomSentence() {
   if (r < 0.12) {
     //goodGuysSentences
     var item = goodGuysSentences.splice(Math.floor(Math.random() * goodGuysSentences.length), 1);
+    console.log(item);
     var sentenceTemplate = item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
   } else if (r < 0.25) {
