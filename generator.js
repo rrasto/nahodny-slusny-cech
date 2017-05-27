@@ -7,7 +7,7 @@ function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
   other = parseTextFile("hlasky.txt");
-//   console.log(other);
+  console.log(other);
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
 }
@@ -190,35 +190,47 @@ function getRandomSentence() {
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
-    console.log("item:");
-    console.log(item);
-    console.log("sentenceTemplate");
+//     console.log("item:");
+//     console.log(item);
+//     console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
-    console.log(sentenceTemplate);
+//     console.log(sentenceTemplate);
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
     //other
     return other.splice(Math.floor(Math.random() * other.length), 1);
   }
 }
+  
+// add number of guys to template:
+function adjustGysSentences(guysSentences) {
+  var adjustedSentences = [];
+  for (i = 0; i < guysSentences.length; i++) {
+    adjustedSentences[i] = [0, guysSentences[i]];
+    for (j = 0; j < 10; j++) {
+      if(guysSentences[i].indexOf('{' + j.toString() + '}') >= 0) {
+//         console.log(j);
+        adjustedSentences[i] = [j+1, guysSentences[i]]
+      }
+    }
+  }
+  return adjustedSentences;
+}
 
 function getPost(length, capslock) {
   // length 2 - 5
   length = length || Math.random() * 3 + 2;
   capslock = capslock || 0.05;
-  var goodGuysSentencesBak = goodGuysSentences.slice(0);
-  var badGuysSentencesBak = badGuysSentences.slice(0);
-  for (i = 0; i < badGuysSentencesBak.length; i++) {
-    for (j = 0; j < 10; j++) {
-      if(badGuysSentencesBak[i].indexOf('{' + j.toString() + '}') >= 0) {
-        console.log(j);
-        badGuysSentencesBak[i] = [j+1, badGuysSentencesBak[i]]
-      }
-//       else {
-//         badGuysSentencesBak[i] = [1, badGuysSentencesBak[i]]
+  var goodGuysSentencesBak = adjustGysSentences(goodGuysSentences.slice(0));
+  var badGuysSentencesBak = adjustGysSentences(badGuysSentences.slice(0));
+//   for (i = 0; i < badGuysSentencesBak.length; i++) {
+//     for (j = 0; j < 10; j++) {
+//       if(badGuysSentencesBak[i].indexOf('{' + j.toString() + '}') >= 0) {
+//         console.log(j);
+//         badGuysSentencesBak[i] = [j+1, badGuysSentencesBak[i]]
 //       }
-    }
-  }
+//     }
+//   }
   console.log("badGuysSentencesBak");
   console.log(badGuysSentencesBak);
   console.log("goodGuysSentencesBak");
