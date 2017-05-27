@@ -11,7 +11,9 @@ function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
   other = parseTextFile("hlasky.txt");
+  console.log(other);
   goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
+  console.log(goodGuysSentences);
   badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
   goodGuys = parseTextFile("dobri_chlapci.txt");
   badGuys = parseTextFile("zli_chlapci.txt");
