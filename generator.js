@@ -210,7 +210,7 @@ function getPost(length, capslock) {
   var badGuysSentencesBak = badGuysSentences.slice(0);
   for (i = 0; i < badGuysSentencesBak.length; i++) {
     for (j = 0; j < 10; j++) {
-      console.log('{' + j.toString() + '}';
+      console.log('{' + j.toString() + '}');
       if( badGuysSentencesBak.indexOf('{' + j.toString() + '}') >= 0){
         badGuysSentencesBak[i] = [j+1, badGuysSentencesBak[i]]
       }
