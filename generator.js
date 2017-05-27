@@ -208,12 +208,14 @@ function getPost(length, capslock) {
   capslock = capslock || 0.05;
   var goodGuysSentencesBak = goodGuysSentences.slice(0);
   var badGuysSentencesBak = badGuysSentences.slice(0);
-  for (i = 0; i < badGuysSentencesBak.length; i++) { 
-    if( badGuysSentencesBak.indexOf('{1}') >= 0){
-      badGuysSentencesBak[i] = [2, badGuysSentencesBak[i]]
-    }
-    else {
-      badGuysSentencesBak[i] = [1, badGuysSentencesBak[i]]
+  for (i = 0; i < badGuysSentencesBak.length; i++) {
+    for (j = 0; j < 10; j++) {
+      if( badGuysSentencesBak.indexOf('{' + j.toString() + '}') >= 0){
+        badGuysSentencesBak[i] = [j+1, badGuysSentencesBak[i]]
+      }
+//       else {
+//         badGuysSentencesBak[i] = [1, badGuysSentencesBak[i]]
+//       }
     }
   }
   console.log("badGuysSentencesBak");
