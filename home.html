@@ -18,7 +18,7 @@
         }(document, 'script', 'facebook-jssdk'));
       </script>
       <div class="container">
-        <h2>Nahodný Hrdý Sloviän:</h2>
+        <h2 id="title">Nahodný Hrdý Sloviän</h2>
         <img src="http://img.topky.sk/big/1736737.jpg" id="xichty">
         Faktor hnevu: <input type="range" min="0" max="10" value="1" id="rageFactor" onchange="changeBackground();"/><br/>
         Téma: 
@@ -27,7 +27,13 @@
           <input type="radio" name="tema" value="2"> Rómovia
           <input type="radio" name="tema" value="3"> Migranti
           <input type="radio" name="tema" value="4"> LGBT
-        </form> 
+        </form>
+        <br/>
+        Vyber inú postavičku: 
+        <select>
+          <option value="slovien">Hrdý Sloviän</option>
+          <option value="slniecko">Naivné slniečko</option>
+        </select>
         <br/><br/>
         <button type="button" class="myButton" onclick="generatePost();">Generuj názor</button>
         <!--div style="margin-left: 100px;" class="fb-share-button" data-href="https://slusny-slovien.herokuapp.com/" data-layout="button_count" data-size="small" data-mobile-iframe="true">
