@@ -156,10 +156,32 @@ function changeBackground() {
   document.body.style.background = "rgb" + colors[rage];
   document.getElementById('xichty').src = images[parseInt(rage/2)];
 }
+  
+function changeTopic() {
+  var topic = 1;
+  var radios = document.getElementsByName('tema');
+  for (i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+          topic = parseInt(radios[i].value);
+          break;
+      }
+  }
+  console.log(topic);
+  if (topic == 2) {
+    others = parseTextFile("hlasky_romovia.txt")
+  } 
+  elif (topic == 3) {
+    others = parseTextFile("hlasky_migranti.txt")
+  } 
+  else {
+    other = parseTextFile("hlasky.txt").concat(parseTextFile("hlasky_romovia.txt")).concat(parseTextFile("hlasky_migranti.txt"));
+  }
+}
 
 // hacky export, but let's keep it simple
 window.generatePost = generatePost;
 window.changeBackground = changeBackground;
+window.changeBackground = changeTopic;
 
 return {
   getPost: getPost
