@@ -152,29 +152,46 @@ function changeBackground() {
   
 function changeTopic() {
   var topic = 1;
-  var radios = document.getElementsByName('tema');
-  for (i = 0; i < radios.length; i++) {
-      if (radios[i].checked) {
-          topic = parseInt(radios[i].value);
+  var radiosT = document.getElementsByName('tema');
+  for (i = 0; i < radiosT.length; i++) {
+      if (radiosT[i].checked) {
+          topic = parseInt(radiosT[i].value);
           break;
       }
   }
-  console.log(topic);
-  if (topic == 2) {
-    other = parseTextFile("configs/romovia_hlasky.txt");
-  } 
-  else if (topic == 3) {
-    other = parseTextFile("configs/migranti_hlasky.txt");
+  var role = 1;
+  var radiosR = document.getElementsByName('role');
+  for (i = 0; i < radiosR.length; i++) {
+      if (radiosR[i].checked) {
+          role = parseInt(radiosR[i].value);
+          break;
+      }
   }
-  else if (topic == 4) {
-    other = parseTextFile("configs/lgbt_hlasky.txt");
+  if (role == 2) {
+    var keyword = "slniecko";
   }
   else {
-    other = parseTextFile("configs/hlasky.txt")
-      .concat(parseTextFile("configs/romovia_hlasky.txt"))
-      .concat(parseTextFile("configs/migranti_hlasky.txt"))
-      .concat(parseTextFile("configs/lgbt_hlasky.txt"))
+    var keyword = "slovien";
   }
+  if (topic == 2) {
+    other = parseTextFile("configs/romovia_" + keyword + ".txt");
+  } 
+  else if (topic == 3) {
+    other = parseTextFile("configs/migranti_" + keyword + ".txt");
+  }
+  else if (topic == 4) {
+    other = parseTextFile("configs/lgbt_" + keyword + ".txt");
+  }
+  else {
+    other = parseTextFile("configs/hlasky_" + keyword + ".txt")
+      .concat(parseTextFile("configs/romovia_" + keyword + ".txt"))
+      .concat(parseTextFile("configs/migranti_" + keyword + ".txt"))
+      .concat(parseTextFile("configs/lgbt_" + keyword + ".txt"))
+  }
+}
+  
+function changeRole() {
+  changeTopic();
 }
 
 // hacky export, but let's keep it simple
