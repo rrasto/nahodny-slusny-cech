@@ -2,8 +2,8 @@
 
 // some random hates found on the internets
 var other = parseTextFile("hlasky.txt");
-var goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
-var badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
+var goodGuysSentences = adjustGysSentences(parseTextFile("hlasky_dobri_chlapci.txt"));
+var badGuysSentences = adjustGysSentences(parseTextFile("hlasky_zli_chlapci.txt"));
 var goodGuys = parseTextFile("dobri_chlapci.txt");
 var badGuys = parseTextFile("zli_chlapci.txt");
   
@@ -233,8 +233,10 @@ function getPost(length, capslock) {
   // length 2 - 5
   length = length || Math.random() * 3 + 2;
   capslock = capslock || 0.05;
-  var goodGuysSentencesBak = adjustGysSentences(goodGuysSentences.slice(0));
-  var badGuysSentencesBak = adjustGysSentences(badGuysSentences.slice(0));
+  var goodGuysSentencesBak = goodGuysSentences.slice(0);
+  var badGuysSentencesBak = badGuysSentences.slice(0);
+//   var goodGuysSentencesBak = adjustGysSentences(goodGuysSentences.slice(0));
+//   var badGuysSentencesBak = adjustGysSentences(badGuysSentences.slice(0));
 //   for (i = 0; i < badGuysSentencesBak.length; i++) {
 //     for (j = 0; j < 10; j++) {
 //       if(badGuysSentencesBak[i].indexOf('{' + j.toString() + '}') >= 0) {
