@@ -2,6 +2,15 @@
 
 // some random hates found on the internets
 var other = [];
+  
+function generatePost() {
+  var rage = parseInt(document.getElementById('rageFactor').value) / 12;
+  var post = getPost(undefined, rage);
+  other = parseTextFile("hlasky.txt");
+  console.log(other);
+  document.getElementById('post').innerHTML = '';
+  document.getElementById('post').insertAdjacentHTML('afterbegin', post);
+}
 // var other = ['Nebudu nám vnucovat právo šaria , pivo a klobásku im povinne dať. ',
 //   ' to by sa za komunistov nestalo!!!!',
 //   ' Kiska lokaj sionu , hamba slovákov',
@@ -200,14 +209,14 @@ function changeBackground() {
   document.getElementById('xichty').src = images[parseInt(rage/2)];
 }
 
-function generatePost() {
-  var rage = parseInt(document.getElementById('rageFactor').value) / 12;
-  var post = getPost(undefined, rage);
-  other = parseTextFile("hlasky.txt");
-  console.log(other);
-  document.getElementById('post').innerHTML = '';
-  document.getElementById('post').insertAdjacentHTML('afterbegin', post);
-}
+// function generatePost() {
+//   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
+//   var post = getPost(undefined, rage);
+//   other = parseTextFile("hlasky.txt");
+//   console.log(other);
+//   document.getElementById('post').innerHTML = '';
+//   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
+// }
 
 // hacky export, but let's keep it simple
 window.generatePost = generatePost;
