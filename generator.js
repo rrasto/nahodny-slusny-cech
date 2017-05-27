@@ -186,7 +186,8 @@ function getRandomSentence() {
     var item = goodGuysSentences.splice(Math.floor(Math.random() * goodGuysSentences.length), 1);
     // var numberOfPeople = item[0][0];
     var sentenceTemplate = item[0][1];
-    return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
+    return item[0][1];
+//     return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
@@ -195,7 +196,8 @@ function getRandomSentence() {
 //     console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
 //     console.log(sentenceTemplate);
-    return sentenceTemplate.formatUnicorn(shuffle(badGuys));
+    return item[0][1];
+//     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
     //other
     return other.splice(Math.floor(Math.random() * other.length), 1);
