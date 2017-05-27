@@ -185,8 +185,8 @@ function changeTopic() {
   var role = getRole();
   if (role == 2) {
     var keyword = "slniecko";
-    goodGuysSentences = [[0, ""]];
-    badGuysSentences = [[0, ""]];
+    goodGuysSentences = [[0, ""], [0, ""], [0, ""], [0, ""], [0, ""], [0, ""]];
+    badGuysSentences = [[0, ""], [0, ""], [0, ""], [0, ""], [0, ""], [0, ""]];
     goodGuys = [""];
     badGuys = [""];
     swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA'];
