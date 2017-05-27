@@ -1,7 +1,7 @@
 (function () {
 
 // some random hates found on the internets
-var other = parseTextFile("hlasky.txt");
+var other = parseTextFile("hlasky.txt").concat(parseTextFile("hlasky_romovia.txt").concat(parseTextFile("hlasky_migranti.txt");
 var goodGuysSentences = adjustGysSentences(parseTextFile("hlasky_dobri_chlapci.txt"));
 var badGuysSentences = adjustGysSentences(parseTextFile("hlasky_zli_chlapci.txt"));
 var goodGuys = parseTextFile("dobri_chlapci.txt");
