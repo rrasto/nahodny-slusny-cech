@@ -1,23 +1,23 @@
 (function () {
 
 // some random hates found on the internets
-var other = [];
-var goodGuysSentences = [];
-var badGuysSentences = [];
-var goodGuys = [];
-var badGuys = [];
+var other = parseTextFile("hlasky.txt");
+var goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
+var badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
+var goodGuys = parseTextFile("dobri_chlapci.txt");
+var badGuys = parseTextFile("zli_chlapci.txt");
   
 function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
   var post = getPost(undefined, rage);
-  other = parseTextFile("hlasky.txt");
-  console.log(other);
-  goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
-  console.log(goodGuysSentences);
-  badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
-  goodGuys = parseTextFile("dobri_chlapci.txt");
-  badGuys = parseTextFile("zli_chlapci.txt");
-  console.log(goodGuys);
+//   other = parseTextFile("hlasky.txt");
+//   console.log(other);
+//   goodGuysSentences = parseTextFile("hlasky_dobri_chlapci.txt");
+//   console.log(goodGuysSentences);
+//   badGuysSentences = parseTextFile("hlasky_zli_chlapci.txt");
+//   goodGuys = parseTextFile("dobri_chlapci.txt");
+//   badGuys = parseTextFile("zli_chlapci.txt");
+//   console.log(goodGuys);
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
 }
