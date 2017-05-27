@@ -6,3 +6,4 @@ a {0} a {1} by mali vyhráť volbi ,
 mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí .
 Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .
 {0} aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!
+{0} na hrad !!
