@@ -167,9 +167,9 @@ function getRandomSentence() {
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
-    console.log("item":);
+    console.log("item:");
     console.log(item);
-    console.log("sentenceTemplate":);
+    console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
     console.log(sentenceTemplate);
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
@@ -185,7 +185,7 @@ function getPost(length, capslock) {
   capslock = capslock || 0.05;
   var goodGuysSentencesBak = goodGuysSentences.slice(0);
   var badGuysSentencesBak = badGuysSentences.slice(0);
-  console.log("badGuysSentencesBak":);
+  console.log("badGuysSentencesBak");
   console.log(badGuysSentencesBak);
   var otherBak = other.slice(0);
 
