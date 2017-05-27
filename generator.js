@@ -89,19 +89,12 @@ function getRandomSentence() {
   if (r < 0.12) {
     //goodGuysSentences
     var item = goodGuysSentences.splice(Math.floor(Math.random() * goodGuysSentences.length), 1);
-    // var numberOfPeople = item[0][0];
     var sentenceTemplate = item[0][1];
-//     return item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
-//     console.log("item:");
-//     console.log(item);
-//     console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
-//     console.log(sentenceTemplate);
-//     return item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
     //other
@@ -168,10 +161,10 @@ function changeTopic() {
   }
   console.log(topic);
   if (topic == 2) {
-    others = parseTextFile("hlasky_romovia.txt")
+    other = parseTextFile("hlasky_romovia.txt");
   } 
   else if (topic == 3) {
-    others = parseTextFile("hlasky_migranti.txt")
+    other = parseTextFile("hlasky_migranti.txt");
   } 
   else {
     other = parseTextFile("hlasky.txt").concat(parseTextFile("hlasky_romovia.txt")).concat(parseTextFile("hlasky_migranti.txt"));
