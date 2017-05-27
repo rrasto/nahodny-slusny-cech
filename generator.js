@@ -1,14 +1,22 @@
 (function () {
 
 // some random hates found on the internets
-var other = parseTextFile("configs/hlasky.txt").concat(parseTextFile("configs/romovia_hlasky.txt")).concat(parseTextFile("configs/migranti_hlasky.txt"));
-var goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
-var badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
-var goodGuys = parseTextFile("configs/dobri_chlapci.txt");
-var badGuys = parseTextFile("configs/zli_chlapci.txt");
-var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
-var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
-                          'HAJZLY DO PLYNU', 'NASTRÁˇY'];
+// var other = parseTextFile("configs/hlasky_slovien.txt").concat(parseTextFile("configs/romovia_slovien.txt")).concat(parseTextFile("configs/migranti_slovien.txt"));
+// var goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
+// var badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
+// var goodGuys = parseTextFile("configs/dobri_chlapci.txt");
+// var badGuys = parseTextFile("configs/zli_chlapci.txt");
+// var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
+// var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
+//                           'HAJZLY DO PLYNU', 'NASTRÁˇY'];
+  
+var other;
+var goodGuysSentences;
+var badGuysSentences;
+var goodGuys;
+var badGuys;
+var swearWords;
+var swearWordsLvl2;
   
 function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
@@ -169,9 +177,22 @@ function changeTopic() {
   }
   if (role == 2) {
     var keyword = "slniecko";
+    goodGuysSentences = [[]];
+    badGuysSentences = [[]];
+    goodGuys = [];
+    badGuys = [];
+    swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA'];
+    swearWordsLvl2 = ['FAŠISTI', 'NENAZRANE SVINE', 'VRAHOVIA', 'IGNORANTIII', 'VYPATLANCI'];
   }
   else {
     var keyword = "slovien";
+    goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
+    badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
+    goodGuys = parseTextFile("configs/dobri_chlapci.txt");
+    badGuys = parseTextFile("configs/zli_chlapci.txt");
+    swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
+    swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
+                          'HAJZLY DO PLYNU', 'NASTRÁˇY'];
   }
   if (topic == 2) {
     other = parseTextFile("configs/romovia_" + keyword + ".txt");
@@ -198,6 +219,8 @@ function changeRole() {
 window.generatePost = generatePost;
 window.changeBackground = changeBackground;
 window.changeTopic = changeTopic;
+  
+changeTopic();
 
 return {
   getPost: getPost
