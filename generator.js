@@ -181,7 +181,7 @@ function changeTopic() {
 // hacky export, but let's keep it simple
 window.generatePost = generatePost;
 window.changeBackground = changeBackground;
-window.changeBackground = changeTopic;
+window.changeTopic = changeTopic;
 
 return {
   getPost: getPost
