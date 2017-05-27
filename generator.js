@@ -98,9 +98,9 @@ function getRandomSentence() {
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
 //     console.log("item:");
 //     console.log(item);
-    console.log("sentenceTemplate");
+//     console.log("sentenceTemplate");
     var sentenceTemplate = item[0][1];
-    console.log(sentenceTemplate);
+//     console.log(sentenceTemplate);
 //     return item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
