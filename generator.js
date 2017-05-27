@@ -146,14 +146,26 @@ function getPost(length, capslock) {
   
 function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
-  var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
-                "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
-  var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
-                "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
-                "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
-                "http://img.topky.sk/big/1736737.jpg",
-                "http://i.sme.sk/cdata/2/49/4906652/kotleba.jpg",
-                "https://i.ytimg.com/vi/gJe7fY-yowk/maxresdefault.jpg"];
+  var role = getRole();
+  if (role == 2) {
+    var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
+                  "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
+    var images = ["", 
+                  "", 
+                  "", 
+                  "",
+                  "",
+                  ""];
+  else {
+    var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
+                  "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
+    var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
+                  "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
+                  "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
+                  "http://img.topky.sk/big/1736737.jpg",
+                  "http://i.sme.sk/cdata/2/49/4906652/kotleba.jpg",
+                  "https://i.ytimg.com/vi/gJe7fY-yowk/maxresdefault.jpg"];
+  }
   document.body.style.background = "rgb" + colors[rage];
   document.getElementById('xichty').src = images[parseInt(rage/2)];
 }
@@ -167,14 +179,15 @@ function changeTopic() {
           break;
       }
   }
-  var role = 1;
-  var radiosR = document.getElementsByName('role');
-  for (i = 0; i < radiosR.length; i++) {
-      if (radiosR[i].checked) {
-          role = parseInt(radiosR[i].value);
-          break;
-      }
-  }
+  var role = getRole();
+//   var role = 1;
+//   var radiosR = document.getElementsByName('role');
+//   for (i = 0; i < radiosR.length; i++) {
+//       if (radiosR[i].checked) {
+//           role = parseInt(radiosR[i].value);
+//           break;
+//       }
+//   }
   if (role == 2) {
     var keyword = "slniecko";
     goodGuysSentences = [[]];
@@ -211,14 +224,28 @@ function changeTopic() {
   }
 }
   
+function getRole() {
+  var role = 1;
+  var radiosR = document.getElementsByName('role');
+  for (i = 0; i < radiosR.length; i++) {
+      if (radiosR[i].checked) {
+          role = parseInt(radiosR[i].value);
+          break;
+      }
+  }
+  return role;
+}
+  
 function changeRole() {
   changeTopic();
+  changeBackground();
 }
 
 // hacky export, but let's keep it simple
 window.generatePost = generatePost;
 window.changeBackground = changeBackground;
 window.changeTopic = changeTopic;
+window.changeRole = changeRole;
   
 changeTopic();
 
