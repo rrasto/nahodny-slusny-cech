@@ -1,14 +1,14 @@
 (function () {
 
 // some random hates found on the internets
-var other = parseTextFile("hlasky.txt").concat(parseTextFile("hlasky_romovia.txt")).concat(parseTextFile("hlasky_migranti.txt"));
-var goodGuysSentences = adjustGysSentences(parseTextFile("hlasky_dobri_chlapci.txt"));
-var badGuysSentences = adjustGysSentences(parseTextFile("hlasky_zli_chlapci.txt"));
-var goodGuys = parseTextFile("dobri_chlapci.txt");
-var badGuys = parseTextFile("zli_chlapci.txt");
-var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
-var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ EU', 'KOKOOOOT', 'STRIELAŤ MIGRANTOV', 
-                          'CIGÁNI DO PLYNU', 'NASTRÁˇY'];
+var other = parseTextFile("configs/hlasky.txt").concat(parseTextFile("configs/romovia_hlasky.txt")).concat(parseTextFile("configs/migranti_hlasky.txt"));
+var goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
+var badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
+var goodGuys = parseTextFile("configs/dobri_chlapci.txt");
+var badGuys = parseTextFile("configs/zli_chlapci.txt");
+var swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
+var swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
+                          'HAJZLY DO PLYNU', 'NASTRÁˇY'];
   
 function generatePost() {
   var rage = parseInt(document.getElementById('rageFactor').value) / 12;
@@ -161,13 +161,13 @@ function changeTopic() {
   }
   console.log(topic);
   if (topic == 2) {
-    other = parseTextFile("hlasky_romovia.txt");
+    other = parseTextFile("configs/romovia_hlasky.txt");
   } 
   else if (topic == 3) {
-    other = parseTextFile("hlasky_migranti.txt");
+    other = parseTextFile("configs/migranti_hlasky.txt");
   } 
   else {
-    other = parseTextFile("hlasky.txt").concat(parseTextFile("hlasky_romovia.txt")).concat(parseTextFile("hlasky_migranti.txt"));
+    other = parseTextFile("configs/hlasky.txt").concat(parseTextFile("configs/romovia_hlasky.txt")).concat(parseTextFile("configs/migranti_hlasky.txt"));
   }
 }
 
