@@ -103,6 +103,7 @@ function getRandomSentence() {
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
+    console.log(item);
     var sentenceTemplate = item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
