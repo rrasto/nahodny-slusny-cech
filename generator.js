@@ -69,6 +69,17 @@ var goodGuysSentences = [
   [1, ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!']
 ];
 
+// var goodGuysSentences = [
+//   ' polytike sice moc nerozumjem , ale ten {0} je dobrý, ten by xce narobiť porjadki .',
+//    ' {0} chce aby sme mohly brániť našu svojstojú rodnú svojeť .',
+//    ' {0} to mislí uprimne z našim národom .',
+//    ' {0} aspom vravý tomuto národu praudu .',
+//    ' a {0} a {1} by mali vyhráť volbi ',
+//    ' mislím,že {0} je jedinný rozumný , lebo aspoň má gule a vravý čo si mislí. ',
+//    ' Každý kdo má modzog a nie je pyča preda musý vedeť že {0} a {1} to s nami mislja dobre .',
+//    ' {0} tam aspoň zoptimalizuje počet vlastizradcov tochto ťažko skúšaného národa !!!'
+// ];
+  
 var badGuysSentences = [
   [2, ' za fšecko muožu {0} a {1} .'],
   [2, ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči '],
@@ -79,6 +90,18 @@ var badGuysSentences = [
   [1, ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .'],
   [2, ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! '],
   [1, ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!']
+];
+  
+var badGuysSentences = [
+  ' za fšecko muožu {0} a {1} .',
+  ' Exystuje tajný plán , ktorý vitvorily {0} a {1} a teraz sa to šecko deje, otvorte oči ',
+  ' {0} a {1} len okrádajú štát a slušných pracovytých luďí čo pre tento národ tvorja hodnoty .',
+  ' {0} do plinu !!!!',
+  ' , lebo toto sú veci bez ktorých by táto krajina fungovala: {0} a {1} ',
+  ' je to jednoduché.. {0}? Mám riešenie - vyhostit do Afriky!!!!',
+  ' Je predsa úúúplne jasné že korporácie a {1} kcú aby sme si to mislely .',
+  ' {0} a {1} nemusia pracovať a muožu len dostávať dávky a my na naše děti musíme len zbierať vrchnáky, aby byly zdravé, pre toto som kľúčami neštrngal, zlatý komunisti!!! ! ',
+  ' Inak fčera som sa díval na oblohu a bola tam velká dávka chemtrails , viac než obvikle a muože za to a Kiska!!!!!!'
 ];
 
 var goodGuys = ['pan Kotleba', 'ing. mgr. Kotleba', 'Kotleba', 'Kollár', 'pán premiér', 'Slovenské Hnutie Obrody', 'pán Švec', 'náš biedny národ',
@@ -185,8 +208,18 @@ function getPost(length, capslock) {
   capslock = capslock || 0.05;
   var goodGuysSentencesBak = goodGuysSentences.slice(0);
   var badGuysSentencesBak = badGuysSentences.slice(0);
+  for (i = 0; i < badGuysSentencesBak.length; i++) { 
+    if( badGuysSentencesBak.indexOf('{1}') >= 0){
+      badGuysSentencesBak[i] = [2, badGuysSentencesBak[i]]
+    }
+    else {
+      badGuysSentencesBak[i] = [1, badGuysSentencesBak[i]]
+    }
+  }
   console.log("badGuysSentencesBak");
   console.log(badGuysSentencesBak);
+  console.log("goodGuysSentencesBak");
+  console.log(goodGuysSentencesBak);
   var otherBak = other.slice(0);
 
   var post = '';
