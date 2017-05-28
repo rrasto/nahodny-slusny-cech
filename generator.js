@@ -86,13 +86,13 @@ function getRandomSentence() {
   if (r < 0.12) {
     //goodGuysSentences
     var item = goodGuysSentences.splice(Math.floor(Math.random() * goodGuysSentences.length), 1);
-    console.log(item);
+//     console.log(item);
     var sentenceTemplate = item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(goodGuys));
   } else if (r < 0.25) {
     //badGuysSentences
     var item = badGuysSentences.splice(Math.floor(Math.random() * badGuysSentences.length), 1);
-    console.log(item);
+//     console.log(item);
     var sentenceTemplate = item[0][1];
     return sentenceTemplate.formatUnicorn(shuffle(badGuys));
   } else {
@@ -178,8 +178,9 @@ function changeTopic() {
     badGuysSentences = [[0, ""], [0, ""], [0, ""], [0, ""], [0, ""], [0, ""]];
     goodGuys = [""];
     badGuys = [""];
-    swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA'];
-    swearWordsLvl2 = ['FAŠISTI', 'NENAZRANE SVINE', 'VRAHOVIA', 'IGNORANTIII', 'VYPATLANCI'];
+    swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA', 
+                  'XENOFÓBOVIA', 'HOMOFÓBOVIA', 'VRAHOVIA LÁSKY', 'NÁSILNÍCI', 'SPIATOČNÍCI'];
+    swearWordsLvl2 = ['FAŠISTI', 'NACISTI', 'RASISTI', 'VRAHOVIA', 'IGNORANTIII', 'VYPATLANCI'];
   }
   else {
     var keyword = "slovien";
