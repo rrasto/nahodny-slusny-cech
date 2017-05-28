@@ -141,7 +141,7 @@ function changeBackground() {
   if (role == 2) {
     var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
                   "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
-    var images = ["https://damnitspot.files.wordpress.com/2013/07/hippie-2.jpg", 
+    var images = ["http://www.zocalopublicsquare.org/wp-content/uploads/2015/10/thum-merkel-refugee.jpg", 
                   "https://cdn.webnoviny.sk/sites/32/2016/09/peter-weisenbacher-alena-krempaska.jpg", 
                   "https://ipravda.sk/res/2010/05/23/thumbs/73476-gay-pride-bratislava-clanokW.jpg", 
                   "https://cdn.webnoviny.sk/sites/32/2012/10/pochod-spolocne-za-slusny-a-bezpecn.jpg",
