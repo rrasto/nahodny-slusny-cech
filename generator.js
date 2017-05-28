@@ -160,6 +160,10 @@ function changeBackground() {
   }
   document.body.style.background = "rgb" + colors[rage];
   document.getElementById('xichty').src = images[parseInt(rage/2)];
+  var ranges = document.querySelectorAll("input[type=range]");
+  for (i = 0; i < ranges.length; i++) {
+    ranges[i].style.background = "rgb" + colors[rage];
+  }
 }
   
 function changeTopic() {
