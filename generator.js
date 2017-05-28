@@ -139,14 +139,20 @@ function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var role = getRole();
   if (role == 2) {
-    var colors = ["(219,202,21","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(230,65,62)","(144,77,0)",
-                  "(159,69,0)","(174,58,0)","(189,43,0)","(227,71,224)"];
+    var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
+                  "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
     var images = ["", 
                   "", 
                   "", 
                   "",
                   "",
                   ""];
+    var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
+                  "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
+                  "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
+                  "http://img.topky.sk/big/1736737.jpg",
+                  "http://i.sme.sk/cdata/2/49/4906652/kotleba.jpg",
+                  "https://i.ytimg.com/vi/gJe7fY-yowk/maxresdefault.jpg"];
   }
   else {
     var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
@@ -232,6 +238,7 @@ function getRole() {
 function changeRole() {
   changeTopic();
   changeBackground();
+  changeTitle();
 }
 
 // hacky export, but let's keep it simple
