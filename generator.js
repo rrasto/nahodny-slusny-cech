@@ -139,7 +139,7 @@ function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var role = getRole();
   if (role == 2) {
-    var colors = ["(212,199,22","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(230,65,62)","(144,77,0)",
+    var colors = ["(219,202,21","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(230,65,62)","(144,77,0)",
                   "(159,69,0)","(174,58,0)","(189,43,0)","(227,71,224)"];
     var images = ["", 
                   "", 
@@ -206,6 +206,15 @@ function changeTopic() {
       .concat(parseTextFile("configs/migranti_" + keyword + ".txt"))
       .concat(parseTextFile("configs/lgbt_" + keyword + ".txt"))
   }
+}
+  
+function changeTitle() {
+  var role = getRole();
+  var title = "Nahodný Hrdý Sloviän";
+  if (role == 2) {
+    title = "Nahodné Naivné Slniečko";
+  }
+  document.getElementById("title").innerHTML = title;
 }
   
 function getRole() {
