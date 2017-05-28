@@ -138,17 +138,17 @@ function getPost(length, capslock) {
 function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var role = getRole();
-  if (role == 2) {
+  if (role == 2) {  // slniecko
     var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
                   "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
     var images = ["http://www.zocalopublicsquare.org/wp-content/uploads/2015/10/thum-merkel-refugee.jpg", 
-                  "https://cdn.webnoviny.sk/sites/32/2016/09/peter-weisenbacher-alena-krempaska.jpg", 
+                  "https://ipravda.sk/res/2016/08/23/thumbs/organizatori-gorila-krempaska-weisenbacher-clanokW.jpg", 
                   "https://ipravda.sk/res/2010/05/23/thumbs/73476-gay-pride-bratislava-clanokW.jpg", 
                   "https://cdn.webnoviny.sk/sites/32/2012/10/pochod-spolocne-za-slusny-a-bezpecn.jpg",
                   "http://panobcan.sk/wp-content/uploads/2015/07/robert-mihaly-provokater.jpg",
                   "http://i61.tinypic.com/2epivxy.jpg"];
   }
-  else {
+  else {  // slovien
     var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
                   "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
     var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
