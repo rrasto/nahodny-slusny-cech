@@ -143,15 +143,15 @@ function changeBackground() {
                   "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
     var images = ["http://www.zocalopublicsquare.org/wp-content/uploads/2015/10/thum-merkel-refugee.jpg", 
                   "https://ipravda.sk/res/2016/08/23/thumbs/organizatori-gorila-krempaska-weisenbacher-clanokW.jpg", 
-                  "https://ipravda.sk/res/2010/05/23/thumbs/73476-gay-pride-bratislava-clanokW.jpg", 
                   "https://cdn.webnoviny.sk/sites/32/2012/10/pochod-spolocne-za-slusny-a-bezpecn.jpg",
+                  "https://ipravda.sk/res/2010/05/23/thumbs/73476-gay-pride-bratislava-clanokW.jpg", 
                   "http://panobcan.sk/wp-content/uploads/2015/07/robert-mihaly-provokater.jpg",
                   "http://i61.tinypic.com/2epivxy.jpg"];
   }
   else {  // slovien
     var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
                   "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
-    var images = ["https://cdn.pbrd.co/images/aFqRkATQ6.jpg", 
+    var images = ["https://t4.aimg.sk/magaziny/KspY7PSmQ-nkLx9q5qF73g~Pohoda-2012-ilustrak42-brichta.jpg?t=LzgwMHg0NTAvc21hcnQ%3D&h=N4jAWXJMRX9h6iyYlb9cBg&e=2145916800&v=2", 
                   "http://fakt24.sk/gallery/photos/14668911561997/thumbnail_14668911561997.jpg", 
                   "https://a-static.projektn.sk/2017/05/skautka.jpeg", 
                   "http://img.topky.sk/big/1736737.jpg",
