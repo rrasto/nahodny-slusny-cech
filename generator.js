@@ -213,6 +213,7 @@ function changeTopic() {
       .concat(parseTextFile("configs/romovia_" + keyword + ".txt"))
       .concat(parseTextFile("configs/migranti_" + keyword + ".txt"))
       .concat(parseTextFile("configs/lgbt_" + keyword + ".txt"))
+      .concat(parseTextFile("configs/konspiracie_" + keyword + ".txt"))
   }
 }
   
