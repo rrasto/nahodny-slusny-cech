@@ -205,7 +205,7 @@ function changeTopic() {
   else if (topic == 4) {
     other = parseTextFile("configs/lgbt_" + keyword + ".txt");
   }
-  else if (topic == 4) {
+  else if (topic == 5) {
     other = parseTextFile("configs/konspiracie_" + keyword + ".txt");
   }
   else {  // topic = 1
