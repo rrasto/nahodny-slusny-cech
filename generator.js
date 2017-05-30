@@ -188,32 +188,32 @@ function changeTopic() {
   }
   else {
     var keyword = "slovien";
-    goodGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_dobri_chlapci.txt"));
-    badGuysSentences = adjustGysSentences(parseTextFile("configs/hlasky_zli_chlapci.txt"));
-    goodGuys = parseTextFile("configs/dobri_chlapci.txt");
-    badGuys = parseTextFile("configs/zli_chlapci.txt");
+    goodGuysSentences = adjustGysSentences(parseTextFile("configs/" + keyword + "_hlasky_dobri_chlapci.txt"));
+    badGuysSentences = adjustGysSentences(parseTextFile("configs/" + keyword + "_hlasky_zli_chlapci.txt"));
+    goodGuys = parseTextFile("configs/" + keyword + "_dobri_chlapci.txt");
+    badGuys = parseTextFile("configs/" + keyword + "_zli_chlapci.txt");
     swearWords = ['KURVY', 'NIHILSTY', 'ŽIDIA', 'KOKOTI', 'NENAZRANE SVINE', 'KOLABORANTI', 'YDIOTI', 'NA STRÁŽ'];
     swearWordsLvl2 = ['KURVAAAA', 'PIIIČAA', 'ZMRRRD', 'JEBAŤ TO CELE', 'KOKOOOOT', 'STRIELAŤ ICH DO RADU', 
                           'HAJZLY DO PLYNU', 'NASTRÁˇY'];
   }
   if (topic == 2) {
-    other = parseTextFile("configs/romovia_" + keyword + ".txt");
+    other = parseTextFile("configs/" + keyword + "_romovia.txt");
   } 
   else if (topic == 3) {
-    other = parseTextFile("configs/migranti_" + keyword + ".txt");
+    other = parseTextFile("configs/" + keyword + "_migranti.txt");
   }
   else if (topic == 4) {
-    other = parseTextFile("configs/lgbt_" + keyword + ".txt");
+    other = parseTextFile("configs/" + keyword + "_lgbt.txt");
   }
   else if (topic == 5) {
-    other = parseTextFile("configs/konspiracie_" + keyword + ".txt");
+    other = parseTextFile("configs/" + keyword + "_konspiracie.txt");
   }
   else {  // topic = 1
-    other = parseTextFile("configs/hlasky_" + keyword + ".txt")
-      .concat(parseTextFile("configs/romovia_" + keyword + ".txt"))
-      .concat(parseTextFile("configs/migranti_" + keyword + ".txt"))
-      .concat(parseTextFile("configs/lgbt_" + keyword + ".txt"))
-      .concat(parseTextFile("configs/konspiracie_" + keyword + ".txt"))
+    other = parseTextFile("configs/" + keyword + "_hlasky.txt")
+      .concat(parseTextFile("configs/" + keyword + "_romovia.txt"))
+      .concat(parseTextFile("configs/" + keyword + "_migranti.txt"))
+      .concat(parseTextFile("configs/" + keyword + "_lgbt.txt"))
+      .concat(parseTextFile("configs/" + keyword + "_konspiracie.txt"))
   }
 }
   
