@@ -151,8 +151,8 @@ function changeBackground() {
   else if (role == 3) {  // vasky
     var colors = ["(255,36,28","(229,32,25)","(204,28,22)","(178,25,19)","( 153,21,16)","(127,18,14)","(102,14,11)",
                   "(76,10,8)","(51,7,5)","(25,3,2)","(0,0,0)"];
-    var images = ["https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzMzEyOTk1Nl5BMl5BanBnXkFtZTgwNDYxODA1NzE@._V1_UY317_CR119,0,214,317_AL_.jpg", 
-                  "https://i.ytimg.com/vi/fxqs4ZnQA6M/maxresdefault.jpg", 
+    var images = ["https://i.ytimg.com/vi/fxqs4ZnQA6M/maxresdefault.jpg", 
+                  "http://www.upnito.sk/0/jd2kn7gf6gyeqzrj4a5yfzyyjmxnsdwv.jpg",
                   "https://i.ytimg.com/vi/3xKcvCfRaOw/hqdefault.jpg",
                   "https://imageth.uloz.to/1/4/c/14ce436dee30c05b9fcc7d8483097d31.640x360.jpg", 
                   "http://img.topky.sk/900px/1799003.jpg/incident-facka-Peter-Osusky-Rudolf-Vasky.jpg",
