@@ -49,13 +49,15 @@ function buranize(sentence, howMuchCapslock, howMuchTypos) {
     result += '!!!';
   }
   if (howMuchCapslock > 0.6) {
-    var wordLvl1 = swearWords.splice(Math.floor(Math.random() * swearWords.length), 1);
-    swearWords.push(wordLvl1);
+//     var wordLvl1 = swearWords.splice(Math.floor(Math.random() * swearWords.length), 1);
+//     swearWords.push(wordLvl1);
+    var wordLvl1 = swearWords[Math.floor(Math.random() * swearWords.length)];
     result += '!! ' + wordLvl1 + '!!!!';
   }
   if (howMuchCapslock > 0.8) {
-    var wordLvl2 = swearWordsLvl2.splice(Math.floor(Math.random() * swearWordsLvl2.length), 1);
-    swearWords.push(wordLvl2);
+//     var wordLvl2 = swearWordsLvl2.splice(Math.floor(Math.random() * swearWordsLvl2.length), 1);
+//     swearWords.push(wordLvl2);
+    var wordLvl2 = swearWordsLvl2[Math.floor(Math.random() * swearWordsLvl2.length)];
     result +=  '!!! ' + wordLvl2 + '!!!!!!!!!!!!!!!?!!!!!!';
   }
   return result;
