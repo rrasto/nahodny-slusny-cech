@@ -189,6 +189,7 @@ function changeTopic() {
   }
   else if (role == 3) {
     var keyword = "vasky";
+    topic = 1;
     document.querySelectorAll("input[name=tema][name=tema][value=1]")[0].checked = true;
     disable_topic = true;
     swearWords = ['ROXORY', 'AROGANTNÍ HAJZLI', 'POJDU DOLE', 'BOJLER', 'HAJZLI', 'KOKOTI', 'HEHEHÉ', 
