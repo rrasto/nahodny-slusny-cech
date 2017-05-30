@@ -250,7 +250,7 @@ function changeTitle() {
     title = "Nahodné Naivné Slniečko";
   }
   else if (role == 3) {
-    title = "Rudolf Vasky - truthseeker";
+    title = "Rudolf Vasky - boilerlover";
   }
   document.getElementById("title").innerHTML = title;
 }
