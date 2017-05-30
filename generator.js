@@ -148,6 +148,16 @@ function changeBackground() {
                   "http://panobcan.sk/wp-content/uploads/2015/07/robert-mihaly-provokater.jpg",
                   "http://i61.tinypic.com/2epivxy.jpg"];
   }
+  else if (role == 3) {  // vasky
+    var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
+                  "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
+    var images = ["https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzMzEyOTk1Nl5BMl5BanBnXkFtZTgwNDYxODA1NzE@._V1_UY317_CR119,0,214,317_AL_.jpg", 
+                  "https://i.ytimg.com/vi/fxqs4ZnQA6M/maxresdefault.jpg", 
+                  "https://i.ytimg.com/vi/3xKcvCfRaOw/hqdefault.jpg",
+                  "https://imageth.uloz.to/1/4/c/14ce436dee30c05b9fcc7d8483097d31.640x360.jpg", 
+                  "http://img.topky.sk/900px/1799003.jpg/incident-facka-Peter-Osusky-Rudolf-Vasky.jpg",
+                  "https://storage.pozary.cz/article/5/8/58cd267e1f199/t2q4qlmxad.1200.jpg"];
+  }
   else {  // slovien
     var colors = ["(53,130,0)","(78,130,0)","(102,130,0)","(128,129,0)","(129,107,0)","(129,82,0)","(144,77,0)",
                   "(159,69,0)","(174,58,0)","(189,43,0)","(204,26,0)"];
