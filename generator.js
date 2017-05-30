@@ -57,6 +57,7 @@ function buranize(sentence, howMuchCapslock, howMuchTypos) {
   if (howMuchCapslock > 0.8) {
 //     var wordLvl2 = swearWordsLvl2.splice(Math.floor(Math.random() * swearWordsLvl2.length), 1);
 //     swearWords.push(wordLvl2);
+    console.log(swearWordsLvl2);
     var wordLvl2 = swearWordsLvl2[Math.floor(Math.random() * swearWordsLvl2.length)];
     result +=  '!!! ' + wordLvl2 + '!!!!!!!!!!!!!!!?!!!!!!';
   }
