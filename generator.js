@@ -181,7 +181,6 @@ function changeTopic() {
   goodGuys = [""];
   badGuys = [""];
   var disable_topic = false;
-  console.log(role);
   if (role == 2) {
     var keyword = "slniecko";
     swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA', 
@@ -191,8 +190,7 @@ function changeTopic() {
   else if (role == 3) {
     var keyword = "vasky";
     topic = 1;
-    console.log(keyword);
-    document.querySelectorAll("input[name=tema][name=tema][value=1]")[0].checked = true;
+    document.getElementById('topic_all').checked = true;
     disable_topic = true;
     swearWords = ['ROXORY', 'AROGANTNÍ HAJZLI', 'POJDU DOLE', 'BOJLER', 'HAJZLI', 'KOKOTI', 'HEHEHÉ', 
                   'JEBEM BOJLER', 'FAŠISTI', 'KURVY', 'PIČA', 'SPIATOČNÍCI'];
