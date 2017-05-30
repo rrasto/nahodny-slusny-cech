@@ -180,11 +180,21 @@ function changeTopic() {
   badGuysSentences = [[0, ""], [0, ""], [0, ""], [0, ""], [0, ""], [0, ""]];
   goodGuys = [""];
   badGuys = [""];
+  var disable_topic = false;
   if (role == 2) {
     var keyword = "slniecko";
     swearWords = ['HLUPÁCI', 'MILITARISTI', 'SEBCI', 'LÁSKA', 'NEVZDELANCI', 'KVETINOVÁ REVOLÚCIA', 'DÚHA', 
                   'XENOFÓBOVIA', 'HOMOFÓBOVIA', 'VRAHOVIA LÁSKY', 'NÁSILNÍCI', 'SPIATOČNÍCI'];
     swearWordsLvl2 = ['FAŠISTI', 'NACISTI', 'RASISTI', 'VRAHOVIA', 'IGNORANTIII', 'VYPATLANCI'];
+  }
+  else if (role == 3) {
+    var keyword = "vasky";
+    document.querySelectorAll("input[name=tema][name=tema][value=1]")[0].checked = true;
+    disable_topic = true;
+    swearWords = ['ROXORY', 'AROGANTNÍ HAJZLI', 'POJDU DOLE', 'BOJLER', 'HAJZLI', 'KOKOTI', 'HEHEHÉ', 
+                  'JEBEM BOJLER', 'FAŠISTI', 'KURVY', 'PIČA', 'SPIATOČNÍCI'];
+    swearWordsLvl2 = ['KRV, MOZGY, ŠŤANKY, SRAČKY', 'FAŠISTICKÉ SVINE', 'HEHEHÉHÉÉÉ', 'KOKÓÓÓTI', 'UJEBEM BOJLER AJ S HMOŽDINAMI', 
+                     'PIIIČAA', 'GENOCÍDA NÁRODA'];
   }
   else {
     var keyword = "slovien";
@@ -209,11 +219,18 @@ function changeTopic() {
     other = parseTextFile("configs/" + keyword + "_konspiracie.txt");
   }
   else {  // topic = 1
+    var form = document.getElementById("topic_form");
+    var elements = form.elements;
+    for (var i = 0, len = elements.length; i < len; ++i) {
+        elements[i].readOnly = disable_topic;
+    }
     other = parseTextFile("configs/" + keyword + "_hlasky.txt")
-      .concat(parseTextFile("configs/" + keyword + "_romovia.txt"))
+    if (role != 3) {
+      other.concat(parseTextFile("configs/" + keyword + "_romovia.txt"))
       .concat(parseTextFile("configs/" + keyword + "_migranti.txt"))
       .concat(parseTextFile("configs/" + keyword + "_lgbt.txt"))
       .concat(parseTextFile("configs/" + keyword + "_konspiracie.txt"))
+    }
   }
 }
   
@@ -222,6 +239,9 @@ function changeTitle() {
   var title = "Nahodný Hrdý Sloviän";
   if (role == 2) {
     title = "Nahodné Naivné Slniečko";
+  }
+  else if (role == 3) {
+    title = "Rudolf Vasky - truthseeker";
   }
   document.getElementById("title").innerHTML = title;
 }
