@@ -149,8 +149,8 @@ function changeBackground() {
                   "http://i61.tinypic.com/2epivxy.jpg"];
   }
   else if (role == 3) {  // vasky
-    var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
-                  "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
+    var colors = ["(255,36,28","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
+                  "(228,67,126)","(228,68,159)","(227,69,191)","(0,0,0)"];
     var images = ["https://images-na.ssl-images-amazon.com/images/M/MV5BMTYzMzEyOTk1Nl5BMl5BanBnXkFtZTgwNDYxODA1NzE@._V1_UY317_CR119,0,214,317_AL_.jpg", 
                   "https://i.ytimg.com/vi/fxqs4ZnQA6M/maxresdefault.jpg", 
                   "https://i.ytimg.com/vi/3xKcvCfRaOw/hqdefault.jpg",
