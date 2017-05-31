@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=PT+Sans+Narrow');
 
+html {
+	min-height: 100%;
+}
+#void {
+ margin-bottom: 80px;
+}
+
 .myButton {
 	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
 	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
@@ -43,13 +50,18 @@
 }
 
 .footer {
-  position: absolute;
+  position: fixed;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 0.5rem;
   background-color: #111;
   text-align: center;
+}
+
+.footer p {
+	margin: 0;
+	padding:0;
 }
 
 h1,h2,h3,h5,h5,h6 {
@@ -67,17 +79,22 @@ hr {
 
 body {
   font-family: "Pt Sans Narrow", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   color: #bccacf;
   font-size: 19px;
-  background: #358200;
+  /*background: #358200;*/
   line-height: 1.6;
+  min-height: 100%;
+  background-image: url("https://cdn.pbrd.co/images/aFqRkATQ6.jpg");
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center top; 
 }
 
 .bubble-content {
    position:relative;
-   float:left;
+   /*float:left;*/
    margin-left:12px;
    width:400px;
    padding:0px 20px;
@@ -98,14 +115,18 @@ a:hover {
 
 .container {
   width: 960px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 0 0.5em 0.5em 0.5em;
+  /*padding: 0 0.5em 0 0.5em;*/
   /*position: relative;*/
-  overflow: hidden;
+  /*overflow: hidden;*/
   height: 100%;
   /*background: #358200;*/
 }
 
+.container * {
+}
+/*
 #xichty {
     position: absolute;
     left: 0;
@@ -114,8 +135,18 @@ a:hover {
     height: auto;
     opacity: 0.2;
     z-index: -1;
-}
+}*/
 
+
+#transparent {
+	position: fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	width: 100%;
+	min-height:100%;
+	z-index: -1;
+}
 
 input[type=range] {
   -webkit-appearance: none;
@@ -205,4 +236,22 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #B6B6B6;
+}
+
+@media only screen and (max-width: 959px) {
+	.container {
+		width: 100%;
+	}
+	body {
+		background-image: none;
+		padding: 0 0.5em;
+	}
+}
+
+@media only screen and (max-width: 412px) {
+  .bubble-content {
+	   margin-left:0;
+	   width: auto;
+	   max-width:100%;
+	}
 }
