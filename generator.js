@@ -13,6 +13,8 @@ function generatePost() {
   var post = getPost(undefined, rage);
   document.getElementById('post').innerHTML = '';
   document.getElementById('post').insertAdjacentHTML('afterbegin', post);
+  /*document.getElementById('footer').style.position = 'relative';*/
+  /*document.getElementById('footer').style.bottom = 0;*/
 }
 
 // monkey patch the formatting function into strings
@@ -137,7 +139,7 @@ function changeBackground() {
   var rage = parseInt(document.getElementById('rageFactor').value);
   var role = getRole();
   if (role == 2) {  // slniecko
-    var colors = ["(219,202,21","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
+    var colors = ["(219,202,21)","(221,174,29)","(223,147,37)","(225,119,45)","(227,92,53)","(230,65,62)","(229,66,94)",
                   "(228,67,126)","(228,68,159)","(227,69,191)","(227,71,224)"];
     var images = ["https://t4.aimg.sk/magaziny/KspY7PSmQ-nkLx9q5qF73g~Pohoda-2012-ilustrak42-brichta.jpg?t=LzgwMHg0NTAvc21hcnQ%3D&h=N4jAWXJMRX9h6iyYlb9cBg&e=2145916800&v=2", 
                   "https://ipravda.sk/res/2016/08/23/thumbs/organizatori-gorila-krempaska-weisenbacher-clanokW.jpg", 
@@ -166,8 +168,20 @@ function changeBackground() {
                   "http://i.sme.sk/cdata/2/49/4906652/kotleba.jpg",
                   "https://i.ytimg.com/vi/gJe7fY-yowk/maxresdefault.jpg"];
   }
-  document.body.style.background = "rgb" + colors[rage];
-  document.getElementById('xichty').src = images[parseInt(rage/2)];
+  //document.body.style.background = "rgb" + colors[rage];
+  //document.getElementById('xichty').src = images[parseInt(rage/2)];
+  
+  document.getElementById("transparent").style.background = "rgb" + colors[rage];
+  document.getElementById("transparent").style.opacity = "0.8";
+  document.getElementById("transparent").style.filter  = 'alpha(opacity=80)';
+  
+  var element = document.getElementById('image_1'),
+  style = window.getComputedStyle( document.body ),
+  bcg = style.getPropertyValue('background-image');
+  if( bcg !== 'none' ) {
+    document.body.style.backgroundImage = "url('" + images[parseInt(rage/2)] + "')";
+  }
+  
   var ranges = document.querySelectorAll("input[type=range]");
   for (i = 0; i < ranges.length; i++) {
     ranges[i].style.background = "rgb" + colors[rage];
